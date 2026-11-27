@@ -7,9 +7,12 @@ requires-python = ">=3.14"
 dependencies = [
     "alembic>=1.20.1",
     "brapi>=1.13.0",
+    "email-validator>=2.4.0",
     "fastapi==0.162.5",
     "psycopg[binary]==3.3.9",
+    "pwdlib[argon2]>=0.4.2",
     "pydantic>=2.14.3",
+    "pyjwt>=2.15.1",
     "python-dotenv>=1.2.4",
     "sqlalchemy>=2.1.8",
     "uvicorn[standart]>=0.54.0",

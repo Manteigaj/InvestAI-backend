@@ -25,6 +25,7 @@ class User(Base):
         nullable=False,
     )
     portfolio: Mapped[list["Portfolio"]] = relationship(
+        "Portfolio",
         back_populates="user"
     )
 

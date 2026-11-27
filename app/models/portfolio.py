@@ -16,13 +16,16 @@ class Portfolio(Base):
     )
 
     user_id: Mapped[int] = MappedColumn(
-        ForeignKey("user.id")
+        ForeignKey("user.id"),
+        nullable=False
     )
 
     user: Mapped["User"] = relationship(
+        "User",
         back_populates="portfolio"
     )
 
     portfolio_asset: Mapped[list["PortfolioAsset"]] = relationship(
+        "PortfolioAsset",
         back_populates="portfolio"
     )

@@ -13,7 +13,7 @@ if not api_key:
 
 client = AsyncBrapi(api_key=api_key)
 
-@router.get("/api/quote/{ticker}")
+@router.get("/quote/{ticker}")
 async def get_quote(ticker: str):
     try:
         quote = await client.quote.retrieve(tickers=ticker)

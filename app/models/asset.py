@@ -61,6 +61,7 @@ class Asset(Base):
     )
 
     portfolio_asset: Mapped[list["PortfolioAsset"]] = relationship(
+        "PortfolioAsset",
         back_populates="asset",
     )
 

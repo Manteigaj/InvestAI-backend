@@ -34,9 +34,11 @@ class PortfolioAsset(Base):
     )
 
     asset: Mapped["Asset"] = relationship(
+        "Asset",
         back_populates="portfolio_asset",
     )
 
     portfolio: Mapped["Portfolio"] = relationship(
+        "Portfolio",
         back_populates="portfolio_asset"
     )
