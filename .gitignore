@@ -42,19 +42,6 @@ env/
 *.sqlite3
 
 # =========================
-# Frontend / Node / Bun
-# =========================
-node_modules/
-dist/
-build/
-.vite/
-.next/
-.turbo/
-
-# Package manager
-.pnpm-store/
-
-# =========================
 # IDEs and Editors
 # =========================
 .idea/
